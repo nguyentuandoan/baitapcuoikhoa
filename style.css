@@ -1,0 +1,621 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* topbar */
+.topbar {
+  display: flex;
+  background-color: rgb(19, 22, 75);
+  color: white;
+  padding: 15px 60px;
+  font-size: 18px;
+}
+.left_topbar {
+  display: flex;
+  justify-content: flex-start;
+  flex: 1;
+}
+.right_topbar {
+  display: flex;
+  text-align: center;
+}
+.right_topbar a {
+  text-decoration: none;
+  color: aliceblue;
+}
+.phone::after{
+    content: "|";
+    margin: 0 15px;
+}
+.phone i,
+.email i  {
+    margin: 0 10px;
+}
+.facebook{
+    margin: 0 15px;
+}
+.follow::after {
+    content: "|";
+    margin: 0 15px;
+}
+.sign_in::after {
+    content: "/";
+    margin: 4px;
+}
+ /* thanh navbar */
+ .navbar {
+  background-color: rgb(250, 250, 250) ;
+  position: sticky ;
+  top: 0;
+  padding: 17px 45px;
+  z-index: 1000;
+
+ }
+.navbar div {
+  display: flex;
+  text-align: center;
+  font-size: 20px;
+ }
+ .logo {
+  margin: 10px 25px;
+  font-size: 15px;
+  font-weight: bold;
+ }
+.menu ul {
+  display: flex;
+  gap: 20px; 
+  list-style: none;
+}
+.menu ul li a:hover{
+  color: #FFC600;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: #000;
+}
+.menu{
+  display: flex;
+  justify-content: end;
+  text-align: center;
+  flex: 2;
+  margin: 10px 25px;
+}
+.profile {
+  display: flex;
+  text-align: center;
+  justify-content: flex-end;
+  margin: 12px;
+  margin-right: 40px;
+}
+.profile div :hover{
+  color: #FFC600;
+}
+.sheart {
+  margin-right: 15px;
+} 
+
+/* banner quảng cáo  */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: rgba(red, green, blue, alpha);
+}
+.slider-content {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  max-width: 40%;
+  color: white;
+}
+.slider-content p{
+  margin-top: 10px;
+}
+.slider-content 
+.slider-content p{
+font-size: 13px;
+margin-top: 16px;
+}
+.banner button{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    transform: translateY(-50%);
+    background-color: #ffc600;
+    width:14%;
+    height:6%;
+    padding:0px 10px;
+    border-radius:5px;
+    border: none;
+}
+.banner button a :hover {
+  color: white;
+  background-color: #021E40;
+}
+.banner a{
+    text-decoration: none;
+    color:#000;
+}
+
+/* category + form 50 dang ki */
+.category{
+    display: grid;
+    padding: 20px 0px 100px 70px;
+    height:400px;
+    margin-bottom: 100px;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.category-wrap{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 100px 100px 100px;
+    justify-content: center;
+    column-gap: 20px;
+    align-items: center;
+}
+.item{
+  background-color: #07294DCC;
+  color: white;
+  height: 65px;
+  text-align: center;
+  border-radius: 5px;
+  padding-top: 6%;
+}
+.item p{
+  margin-top: 4px;
+}
+.category-form{
+    display: grid;
+    position: absolute;
+    right: 9%;
+    top: 100%;
+    justify-content: center;
+    width: 410px;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px #c7c6c6;
+
+
+}
+.category-form1 {
+  display: flex;
+  background-color: #07294D;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 20px 37px;
+  gap: 10px;
+
+}
+.category-form1 h3{
+  color: #ffc600;
+  font-size: 30px;
+  
+}
+.category-form1 span {
+  color: white;
+  font-size: 24px;
+
+}
+.category-form2 {
+  height: 413px;
+  padding: 40px 40px 55px;
+  background-color: white;
+}
+.category-form2 form {
+  display: flex;
+  flex-direction: column;
+}
+.input1 {
+    width:100%;
+    padding: 12px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    border: 0.5px solid #c7c6c6;
+}
+.input2{
+  width: 100%;
+  padding: 12px 12px 40px 12px;
+  margin: 10px 0px;
+  border-radius: 5px;
+  border: 0.5px solid #c7c6c6;
+}
+.input3{
+  background-color: #07294D;
+  padding: 10px 12px;
+  margin: 10px 0px 25px;
+  color: white;
+
+}
+
+/* Featured Courses */
+.featured-courses{
+  margin-top: 100px;
+  padding: 50px 200px 0px;
+}
+.section-title{
+  padding: 0px 8px;
+  margin-bottom: 30px;
+}
+.section-title span{
+    margin-bottom: 10px;
+    font-weight: 20px;
+    color: #07294D;
+
+}
+.section-title h2 {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #021E40;
+}
+.courses-grid{
+  display:grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  justify-content: center;
+  align-items: center;
+  row-gap: 23px;
+  column-gap: 23px;
+
+
+}
+.course-card{
+  display: flex;
+  flex-direction: column;
+  height: 380px;
+  border-radius: 6px;
+  justify-self: center;
+  width: 300px;
+  box-shadow: 0.1px 0.1px 0.1px 0.1px #c7c6c6;
+}
+.course-thumb{
+   height: 50%;
+}
+
+.course-thumb img{
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+}
+.course-content{
+  background-color: white;
+  padding: 30px 15px 25px;
+}
+.course-content h3{
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.rating{
+  font-size: 70%;
+}
+.greyline{
+  color: #727171;
+  height: 10px;
+  width: 100%;
+  padding-top: 20px;
+  margin-bottom: 15px;
+}
+.course-meta{
+  display:flex;
+  font-size: 85%;
+  gap: 45px;
+  padding: 0px 5px;
+  bottom: 15%; 
+}
+.see-all{
+  display: flex;
+  height: 70px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+.btn {
+  background-color: #FFC600;
+  height: 40px;
+  padding:10px 20px;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+.btn a{
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
+
+/* nửa sau */
+
+/* thành tích  */
+.achievements {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3rem 1rem;
+  text-align: center;
+  background-color: rgba(97, 98, 167, 0.4);
+}
+
+.achievements_img1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+}
+
+.achievements_box {
+  flex: 1;
+  z-index: 1;
+  color: white;
+}
+
+.achievements_box span {
+  font-size: 2rem;
+  font-weight: bold;
+  display: block;
+}
+.achievements_box .line {
+  width: 40px;
+  height: 3px;
+  background-color: #f9c700;
+  margin: 0.5rem auto;
+}
+
+.achievements_box p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+.teachers-section {
+  padding: 60px 0;
+  font-family: Arial, sans-serif;
+   width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+/* --- Tiêu đề --- */
+.section-header {
+  margin-bottom: 40px;
+}
+
+.section-subtitle {
+  color: #0d47a1;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.section-subtitle::before {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background: #ffcc00;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #001f3f;
+}
+
+/* --- Bố cục chính --- */
+.teachers-content {
+  display: flex;
+  gap: 30px;
+}
+
+/* --- Danh sách giáo viên --- */
+.teachers-list {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.teacher-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.teacher-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.teacher-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.teacher-card h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.teacher-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.teacher-card span {
+  font-size: 14px;
+  color: #444;
+}
+
+.teacher-card i {
+  color: #ffcc00;
+  margin-right: 5px;
+}
+
+/* --- Feedback học sinh --- */
+.student-feedback {
+  flex: 1;
+  background: #0d2c54;
+  color: #fff;
+  border-radius: 8px;
+  padding: 40px 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.student-feedback h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.quote {
+  max-width: 55%; /* chừa chỗ cho ảnh bên phải */
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.quote-icon {
+  font-size: 40px;
+  color: #ffcc00;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Ảnh học sinh */
+.student-img {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  width: 200px;
+}
+
+.student-img img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* tin tưc mới nhất  */
+/* --- Section Tin tức --- */
+.news-section {
+  padding: 60px 0;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Tiêu đề */
+
+.news-header {
+  margin-bottom: 40px;
+}
+
+.news-subtitle {
+  color: #202936;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  position: relative;
+  display: inline-block;
+}
+
+.news-subtitle::before {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background: #ffcc00;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+}
+
+.news-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #001f3f;
+}
+
+/* Layout nội dung */
+.news-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* Card tin tức */
+.news-card {
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+}
+
+.news-img img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* Meta (tác giả + ngày) */
+.news-meta {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+  color: #777;
+  margin: 12px 0;
+}
+
+.news-meta i {
+  color: #ffcc00;
+  margin-right: 6px;
+}
+
+/* Tiêu đề card */
+.news-card-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1e2832;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.news-card-title:hover {
+  color: #18202d;
+  cursor: pointer;
+}
+
+/* Mô tả */
+.news-desc {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
