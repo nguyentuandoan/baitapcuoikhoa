@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
 }
 /* topbar */
 .topbar {
@@ -329,13 +330,6 @@ margin-top: 16px;
   text-decoration: none;
   color: black;
 }
-
-
-
-
-
-/* nửa sau */
-
 /* thành tích  */
 .achievements {
   position: relative;
