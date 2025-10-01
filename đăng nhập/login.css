@@ -1,0 +1,145 @@
+/* Reset cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+/* Section trung tâm */
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Container đăng nhập */
+.login-container {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    width: 350px;
+    text-align: center;
+}
+
+/* Tiêu đề */
+.login-title {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+}
+
+/* Input */
+.login-input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.login-input:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 5px rgba(37, 117, 252, 0.5);
+}
+
+/* Checkbox */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.login-checkbox {
+    display: none;
+}
+
+.checkbox-label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    user-select: none;
+    color: #555;
+}
+
+/* Ô tích tùy chỉnh */
+.checkbox-label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 2px solid #555;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+/* Khi tích */
+.login-checkbox:checked + .checkbox-label::before {
+    background-color: #2575fc;
+    border-color: #2575fc;
+}
+
+.login-checkbox:checked + .checkbox-label::after {
+    content: "✔";
+    position: absolute;
+    left: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Nút đăng nhập */
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2575fc;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-button:hover {
+    background-color: #6a11cb;
+}
+
+/* Footer */
+.login-footer {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+.login-footer a {
+    color: #2575fc;
+    text-decoration: none;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive nhỏ */
+@media (max-width: 400px) {
+    .login-container {
+        width: 90%;
+        padding: 30px 20px;
+    }
+}
