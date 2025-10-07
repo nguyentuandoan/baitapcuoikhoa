@@ -1,172 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tin tức</title>
-    <link rel="stylesheet" href="tintuc.css" />
-  </head>
-  <body>
-    <header>
-      <div class="banner_TinTuc">
-        <img src="./img/banner_TinTuc.jpg"  class="img_banner_TinTuc"/>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+</head>
+
+<body>
+      <!-- topbar -->
+    <header class="topbar">
+      <div class="left_topbar">
+        <div class="phone">
+          <span><i class="fa-solid fa-phone"></i>092345678 </span>
+        </div>
+        <div class="email">
+          <span><i class="fa-solid fa-envelope"></i> example@gmail.com</span>
+        </div>
+      </div>
+      <div class="right_topbar">
         <div>
-          <h1>TIN TỨC</h1>
-        </div>
-        <li>
-          <ul>
-            <a href="">Trang chủ</a>
-          </ul>
-          <ul>
-            <a href="#">Tin tức</a
-            >
-          </ul>
-        </li>
-      </div>
-    </header>
-
-    <section>
-      <!-- card 1 -->
-      <div class="news-card">
-        <div class="news-img">
-          <img src=" " />
-        </div>
-        <div class="news-meta">
-          <span></span>
-          <span></span>
-          <h3 class="news-card-t"></h3>
-        </div>
-      </div>
-      <!-- card 2 -->
-      <div class="news-card">
-        <div class="news-img">
-          <img src=" " />
-        </div>
-        <div class="news-meta">
-          <span></span>
-          <span></span>
-          <h3 class="news-card-t"></h3>
-        </div>
-      </div>
-      <!-- card 3 -->
-      <div class="news-card">
-        <div class="news-img">
-          <img src=" " />
-        </div>
-        <div class="news-meta">
-          <span></span>
-          <span></span>
-          <h3 class="news-card-t"></h3>
-        </div>
-      </div>
-      <!-- card 4 -->
-      <div class="news-card">
-        <div class="news-img">
-          <img src=" " />
-        </div>
-        <div class="news-meta">
-          <span></span>
-          <span></span>
-          <h3 class="news-card-t"></h3>
-        </div>
-      </div>
-      <!-- card 5 -->
-      <div class="news-card">
-        <div class="news-img">
-          <img src=" " />
-        </div>
-        <div class="news-meta">
-          <span></span>
-          <span></span>
-          <h3 class="news-card-t"></h3>
-        </div>
-      </div>
-      <!-- card 6 -->
-      <div class="news-card">
-        <div class="news-img">
-          <img src=" " />
-        </div>
-        <div class="news-meta">
-          <span></span>
-          <span></span>
-          <h3 class="news-card-t"></h3>
-        </div>
-      </div>
-    </section>
-    <a id="top-page"></a>
-
-    <!-- thông tin cuối trang  -->
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-col about">
-          <div class="edubin-logo">
-            <i class="fas fa-train" style="color: #ffb606"></i>
-            <h3>Edubin</h3>
-          </div>
-          <p>
-            Edubin hoàn hảo cho các khóa học trực tuyến và các học viện khác.
-            Đây là giải pháp hoàn chỉnh với các tính năng và chức năng của LMS.
-            Lorem ipsum dolor sit amet
+          <p class="follow">
+            Theo dõi chúng tôi qua:
+            <span class="facebook"><i class="fa-brands fa-facebook"></i></span>
+            <span><i class="fa-brands fa-instagram"></i></span>
           </p>
         </div>
-
-        <div class="footer-col links">
-          <h3>Dịch vụ của chúng tôi</h3>
-          <ul>
-            <li><a href="#">Việc kinh doanh</a></li>
-            <li><a href="#">Quản lý rủi ro mất mát</a></li>
-            <li><a href="#">Tiếp thị</a></li>
-            <li><a href="#">Tư vấn tài chính</a></li>
-            <li><a href="#">Nói chuyện về tăng trưởng</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col links">
-          <h3>Liên kết khác</h3>
-          <ul>
-            <li><a href="#">Trang chủ</a></li>
-            <li><a href="#">Dịch vụ của chúng tôi</a></li>
-            <li><a href="#">Chúng tôi là ai</a></li>
-            <li><a href="#">Nghiên cứu điển hình của chúng tôi</a></li>
-            <li><a href="#">Quyền riêng tư & Chính sách</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col newsletter">
-          <h3>Bản tin</h3>
-          <div class="contact-info">
-            <p>
-              Hộp thư bưu điện 15122 Đường Collins Tây Victoria 8007 Melbourne
-              Úc
-            </p>
-            <p>Điện thoại: +91 458 654 528</p>
-            <p>Email: info@example.com</p>
-          </div>
-          <div class="social-links">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-pinterest-p"></i></a>
-          </div>
+        <div>
+          <p>
+            <a class="sign_in" href="../đăng nhập/login.html">Đăng nhập</a>
+            <a href="../đăng ký/register.html">Đăng ký</a>
+          </p>
         </div>
       </div>
-
-      <a href="#top-page" class="back-to-top">
-        <i class="fas fa-arrow-up"></i>
-      </a>
-
-      <div class="footer-bottom">
-        <div class="footer-bottom-container">
-          <div class="copyright">
-            © Bản quyền 2025 Edubin | Phát triển bởi Pixelcurve.
-          </div>
-          <div class="bottom-links">
-            <a href="#">Xe điện & Tình trạng</a> |
-            <a href="#">Chính sách bảo mật</a> |
-            <a href="#">Liên hệ với chúng tôi</a>
-          </div>
+    </header>
+    <!-- thanh navbar -->
+    <header class="navbar">
+      <div>
+        <div class="logo">
+          <h3>
+            <i class="fa-solid fa-graduation-cap"></i> TUANDOAN & NGOCQUANG
+          </h3>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="../trang chủ/index.html">Trang chủ </a></li>
+            <li><a href="../các khóa học/courses.html">Các khóa học </a></li>
+            <li><a href="../Sự kiện/event.html">Sự kiện</a></li>
+            <li><a href="../Tin tức/tintuc.html">Tin Tức </a></li>
+            <li><a href="../Liên hệ/contact.html">Liên hệ </a></li>
+          </ul>
+        </div>
+        <div class="profile">
+          <div><i class="fa-solid fa-magnifying-glass sheart"></i></div>
+          <div><i class="fa-solid fa-cart-shopping"></i></div>
         </div>
       </div>
-    </footer>
-  </body>
+    </header>
+    <section class="banner">
+        <img src="./img/banner_TinTuc.jpg" alt="">
+        <div class="layer"></div>
+        <div class="banner-content">
+            <h1> Tin Tức </h1>
+            <p> <a href="../trang chủ/index.html">Tang chủ</a> > <a href="./tintuc.html ">tin tức</a></p>
+        </div>
+    </section>
+    <section class="featured-courses">
+        <div class="courses-grid">
+            <!-- Course 1 -->
+            <div class="course-card">
+                <div class="course-thumb">
+                    <img src="../prj C4E/imgi_157_IT_Engineer.jpg " />
+                    <span class="badge new">Nổi bật</span>
+                    <span class="badge free">49 đô</span>
+                </div>
+                <div class="course-content">
+                    <div class="course-meta">
+                        <div class="teacher">
+                            <div class="fa-solid fa-user"></div>
+                            <span>Adrew Parker</span> 
+                        </div>
+                        <div class="lessons ">
+                            <div class="fa-regular fa-calendar-days"></div>
+                            <span>Ngày 09 tháng 06 năm 2025</span> 
+                        </div>
+                    </div>
+                    <h3>Cách để đạt được sự giáo dục thành công</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+
+                    </p>
+                </div>
+            </div>
+
+            <!-- Course 2 -->
+            <div class="course-card">
+                <div class="course-thumb">
+                    <img src="../prj C4E/imgi_157_1a2ea3a1-bài-tập-plank-tại-nhà.jpg" />
+                    <span class="badge popular">Phổ biến</span>
+                    <span class="badge free">Miễn phí</span>
+                </div>
+                <div class="course-content">
+                    <div class="course-meta">
+                        <div class="teacher">
+                            <div class="fa-solid fa-user"></div>
+                            <span>Adrew Parker</span> 
+                        </div>
+                        <div class="lessons ">
+                            <div class="fa-regular fa-calendar-days"></div>
+                            <span>Ngày 09 tháng 06 năm 2025</span> 
+                        </div>
+                    </div>
+                    <h3>Những điều bạn nên hỏi giáo viên</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+
+                    </p>
+
+
+                </div>
+            </div>
+
+            <!-- Course 3 -->
+            <div class="course-card">
+                <div class="course-thumb">
+                    <img src="../prj C4E/imgi_159_SoftwareEngineer.png" alt="Khóa học 3" />
+                    <span class="badge hot">Lựa chọn</span>
+                    <span class="badge free">Miễn phí</span>
+                </div>
+                <div class="course-content">
+                    <div class="course-meta">
+                        <div class="teacher">
+                            <div class="fa-solid fa-user"></div>
+                            <span>Adrew Parker</span> 
+                        </div>
+                        <div class="lessons ">
+                            <div class="fa-regular fa-calendar-days"></div>
+                            <span>Ngày 09 tháng 06 năm 2025</span> 
+                        </div>
+                    </div>
+                    <h3>Cách khởi nghiệp kinh doanh bằng giáo dục</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+
+                    </p>
+
+                </div>
+            </div>
+
+            <!-- Course 4 -->
+            <div class="course-card">
+                <div class="course-thumb">
+                    <img src="../prj C4E/imgi_162_it-engineer-.jpg" alt="Khóa học 4" />
+                    <span class="badge tech">Công nghệ</span>
+                    <span class="badge premium">Nâng cao</span>
+                </div>
+                <div class="course-content">
+                    <div class="course-meta">
+                        <div class="teacher">
+                            <div class="fa-solid fa-user"></div>
+                            <span>Adrew Parker</span> 
+                        </div>
+                        <div class="lessons ">
+                            <div class="fa-regular fa-calendar-days"></div>
+                            <span>Ngày 09 tháng 06 năm 2025</span> 
+                        </div>
+                    </div>
+                    <h3>Mẹo để thành công trong khoá học trực tuyến</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+
+                </div>
+            </div>
+
+            <!-- Course 5 -->
+            <div class="course-card">
+                <div class="course-thumb">
+                    <img src="../prj C4E/imgi_170_Software-developer-at-computer.jpg" alt="Khóa học 5" />
+                    <span class="badge new">Nổi bật</span>
+                </div>
+                <div class="course-content">
+                    <div class="course-meta">
+                        <div class="teacher">
+                            <div class="fa-solid fa-user"></div>
+                            <span>Adrew Parker</span> 
+                        </div>
+                        <div class="lessons ">
+                            <div class="fa-regular fa-calendar-days"></div>
+                            <span>Ngày 09 tháng 06 năm 2025</span> 
+                        </div>
+                    </div>
+                    <h3>Kỳ thi cuối kỳ Tiểu học và THCS</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+
+                    </p>
+
+                </div>
+            </div>
+
+            <!-- Course 6 -->
+            <div class="course-card">
+                <div class="course-thumb">
+                    <img src="../prj C4E/imgi_26_images.webp" alt="Khóa học 6" />
+                    <span class="badge new">Nổi bật</span>
+                    <span class="badge free">50 bài</span>
+                </div>
+                <div class="course-content">
+                    <div class="course-meta">
+                        <div class="teacher">
+                            <div class="fa-solid fa-user"></div>
+                            <span>Adrew Parker</span> 
+                        </div>
+                        <div class="lessons ">
+                            <div class="fa-regular fa-calendar-days"></div>
+                            <span>Ngày 09 tháng 06 năm 2025</span> 
+                        </div>
+                    </div>
+                    <h3>Những điều bạn cần biết về giáo dục</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="pagination">
+        <a href="#" class="fa-solid fa-chevron-left"></a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#" class="fa-solid fa-chevron-right"></a>
+    </div>
+
+</body>
+
 </html>
