@@ -164,8 +164,14 @@ margin-top: 16px;
     column-gap: 20px;
     align-items: center;
 }
+.category-img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  z-index: -4;
+}
 .item{
-  background-color: #07294DCC;
+  background-color: #0d48a166;
   color: white;
   height: 65px;
   text-align: center;
@@ -214,6 +220,51 @@ margin-top: 16px;
 .category-form2 form {
   display: flex;
   flex-direction: column;
+}
+.item {
+    position: relative; 
+    height: 100px; 
+    width: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+    }
+
+.item .category-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* Tạo lớp phủ mờ */
+.item::after {
+    content: ''; /* Bắt buộc phải có cho pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 37, 64, 0.7); /* Màu xanh đậm với độ mờ 70% */
+    z-index: 2; /* Nằm trên ảnh */
+}
+
+/* Đưa chữ lên trên cùng */
+.item h4, .item p {
+    position: relative;
+    z-index: 3; /* Nằm trên lớp phủ */
+    margin: 0; /* Xóa margin mặc định để căn giữa tốt hơn */
+}
+
+.item h4 {
+    font-size: 18px; /* Có thể điều chỉnh để dễ đọc hơn */
+}
+
+.item p {
+    margin-top: 5px;
+    font-size: 14px;
 }
 .input1 {
     width:100%;
